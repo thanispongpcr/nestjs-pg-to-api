@@ -7,7 +7,7 @@
         }
     ],
     "routes": [
-        "src": "/(.*)",
+        "src": "/list/(.*)",
         "dest": "src/main.ts"
     ]
 }
