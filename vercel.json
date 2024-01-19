@@ -8,6 +8,12 @@
     ],
     "routes": [
         "src": "/list/(.*)",
-        "dest": "src/main.ts"
+        "dest": "src/main.ts",
+        "methods": [
+            "GET",
+            "POST",
+            "PATCH",
+            "DELETE"
+        ]
     ]
 }
