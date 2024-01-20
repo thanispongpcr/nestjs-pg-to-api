@@ -12,7 +12,6 @@ export class ListController {
     return this.listService.create(createListDto);
   }
   
-  
   @Get('/')
   findAll() {
     return this.listService.findAll();

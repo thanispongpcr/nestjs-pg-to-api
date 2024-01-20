@@ -21,7 +21,7 @@ export class ListService {
   findAll() {
     return this.listRepository.find({
       order: {
-        id: 'ASC',
+        id: 'DESC',
       },
     })
   }
