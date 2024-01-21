@@ -11,7 +11,6 @@ import { ConfigModule } from '@nestjs/config';
     ConfigModule.forRoot(),
     TypeOrmModule.forRoot({
       type: 'postgres',
-      // url: process.env.POSTGRES_URL, 
       host: process.env.DATABASE_HOST,
       port: parseInt(process.env.DATABASE_PORT, 10),
       username: process.env.DATABASE_USERNAME,
@@ -19,6 +18,7 @@ import { ConfigModule } from '@nestjs/config';
       database: process.env.DATABASE_NAME,
       entities: [List],
       synchronize: true,
+      // url: process.env.POSTGRES_URL, 
     }),
     ListModule],
   controllers: [AppController],
